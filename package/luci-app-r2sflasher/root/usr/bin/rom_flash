@@ -168,7 +168,7 @@ zstdmt "${workingdir}${imgfile}" -o "$zstfile"
 rm -rf $workingdir
 
 if [[ -f /usr/bin/docker ]]; then
-    echo "检测到存在docker，尝试停止所有docker"
+    echo "检测到存在docker，尝试停止所有docker containers"
     docker stop $(docker ps -aq)
 fi
 
