@@ -20,10 +20,8 @@ rm -rf v2ray-plugin/ && svn co https://github.com/coolsnowwolf/lede/trunk/packag
 rm -rf xray/ && svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/xray
 rm -rf trojan/ && svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/trojan
 
-##smartdns
-git clone https://github.com/paniy/nanopi-openwrt
-mv nanopi-openwrt/luci-app-r2sflasher/ .
-rm -rf nanopi-r2s/
+##smartdns r2sflasher
+cp -r ../../../../package/luci-app-r2sflasher .
 git clone https://github.com/pymumu/smartdns.git
 mv smartdns smartdns1
 mv smartdns1/package/openwrt .
