@@ -6,7 +6,7 @@ on:
     paths:
       - '.github/workflows/r2s_lean_minimal.yml'
   schedule:
-    - cron: '20 03 * * *'
+    - cron: '20 03 * * */3'
 
 jobs:
 
