@@ -5,6 +5,7 @@ on:
     branches: [ master ]
     paths:
       - '.github/workflows/r2s_lean_minimal.yml'
+      - '3_prepare_packages.sh'
   schedule:
     - cron: '20 03 * * */3'
 
