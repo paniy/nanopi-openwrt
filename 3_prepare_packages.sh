@@ -17,7 +17,7 @@ rm -rf luci-app-chinadns-ng/ && git clone https://github.com/WuSiYu/luci-app-chi
 rm -rf openwrt-chinadns-ng/ && git clone https://github.com/pexcn/openwrt-chinadns-ng
 ##rm -rf v2ray/ && svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/v2ray
 ##rm -rf v2ray-plugin/ && svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/v2ray-plugin
-rm -rf xray/ && svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/xray
+rm -rf xray/ && svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray
 rm -rf trojan/ && svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/trojan
 
 ##smartdns r2sflasher
