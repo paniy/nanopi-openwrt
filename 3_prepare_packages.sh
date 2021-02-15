@@ -7,6 +7,10 @@ rm -rf feeds/packages/libs/libcap/ && svn co https://github.com/openwrt/packages
 rm -rf feeds/packages/lang/golang/ && svn co https://github.com/coolsnowwolf/packages/trunk/lang/golang feeds/packages/lang/golang
 sed -i '/enable-jsonc/i\\t--disable-cloud \\' feeds/packages/admin/netdata/Makefile 
 
+#luci-app-cpulimit
+cp -rf ../PATCH/duplicate/luci-app-cpulimit ./package/lean/luci-app-cpulimit
+svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/ntlf9t/cpulimit package/lean/cpulimit
+
 cd package/lean/
 if [[ `pwd` == *"rk3328"* ]]; then
   rm -rf luci-app-oled/ && git clone https://github.com/NateLol/luci-app-oled
