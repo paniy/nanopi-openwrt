@@ -8,7 +8,7 @@ rm -rf feeds/packages/lang/golang/ && svn co https://github.com/coolsnowwolf/pac
 sed -i '/enable-jsonc/i\\t--disable-cloud \\' feeds/packages/admin/netdata/Makefile 
 
 #luci-app-cpulimit
-cp -rf ../PATCH/duplicate/luci-app-cpulimit ./package/lean/luci-app-cpulimit
+svn co https://github.com/paniy/R2S-R4S-X86-OpenWrt/trunk/PATCH/duplicate/luci-app-cpulimit  package/lean/luci-app-cpulimit
 svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/ntlf9t/cpulimit package/lean/cpulimit
 
 cd package/lean/
