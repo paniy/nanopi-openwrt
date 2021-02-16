@@ -1,15 +1,30 @@
 ## Nanopi r1s r2s openwrt 固件自动编译
 
 ### 与原版比较：
-仅有R2S-Minimal版。  
-增加了docker以及Aria2插件。  
-增加了smartdns以及r2s刷机插件。  
-更新了AdGuard Home插件。  
-可以由原版平滑升级，亦可以平滑升级至原版。  
+仅有R2S-Minimal版。
+
+增加了docker以及Aria2插件。
+
+增加了smartdns以及r2s刷机插件。
+
+更新了AdGuard Home插件。
+
+可以由原版平滑升级，亦可以平滑升级至原版。
+
+使用O3编译优化。
+
+CPU超频至1608MHz，建议使用5v/3a电源或者5v/4a电源。
+
+添加CPU频率控制插件。
+
+
+
 原版地址：https://github.com/klever1988/nanopi-openwrt  
-  
-**若能正常使用，不建议紧跟最新版本！**  
+
+**若能正常使用，不建议紧跟最新版本！**
+
 **~~更新前请停止所有docker containers~~(已内化至r2s刷机插件):**  
+
 ```bash
 docker stop $(docker ps -aq)
 ```
