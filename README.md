@@ -1,6 +1,13 @@
 ## Nanopi r1s r2s openwrt 固件自动编译
 
+### **原作者已经不再更新，推荐使用另一个项目：[R2S-R4S-X86-OpenWrt](https://github.com/paniy/R2S-R4S-X86-OpenWrt)**
+
+此项目将继续低活跃度更新。
+
+转移rom时请备份系统设置，由于有一定的兼容性问题，**推荐将备份的设置文件逐个手动覆盖尝试**。
+
 ### 与原版比较：
+
 仅有R2S-Minimal版。
 
 增加了docker以及Aria2插件。
