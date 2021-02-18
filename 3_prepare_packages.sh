@@ -1,7 +1,7 @@
-#使用O3级别的优化
-sed -i 's/Os/O3/g' include/target.mk
-sed -i 's/O2/O3/g' include/toplevel.mk
-sed -i 's/O2/O3/g' ./rules.mk
+#使用O2级别的优化
+sed -i 's/Os/O2/g' include/target.mk
+#sed -i 's/O2/O3/g' include/toplevel.mk
+#sed -i 's/O2/O3/g' ./rules.mk
 #更新feed
 ./scripts/feeds update -a && ./scripts/feeds install -a
 rm -rf feeds/packages/libs/libcap/ && svn co https://github.com/openwrt/packages/trunk/libs/libcap feeds/packages/libs/libcap
