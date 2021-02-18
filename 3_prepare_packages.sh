@@ -1,5 +1,5 @@
 #使用O2级别的优化
-sed -i 's/Os/O2/g' include/target.mk
+#sed -i 's/Os/O2/g' include/target.mk
 #sed -i 's/O2/O3/g' include/toplevel.mk
 #sed -i 's/O2/O3/g' ./rules.mk
 #更新feed
