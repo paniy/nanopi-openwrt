@@ -1,14 +1,14 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
-msgid "R2S Flasher"
-msgstr "R2S 刷机"
+msgid "ROM Flasher"
+msgstr "ROM 刷机"
 
 msgid "Flash ROM"
 msgstr "刷写 ROM"
 
-msgid "Choose Your NanoPi R2S ROM zip File to Flash"
-msgstr "选择 NanoPi R2S ROM zip 压缩文件"
+msgid "Choose Your ROM zip File to Flash"
+msgstr "选择 ROM zip 压缩文件"
 
 msgid "No Specify ROM File."
 msgstr "找不到 ROM 文件"

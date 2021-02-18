@@ -5,7 +5,7 @@ romform = SimpleForm("romflash", translate("Flash ROM"), nil)
 romform.reset = false
 romform.submit = false
 
-section = romform:section(SimpleSection, "", translate("Choose Your NanoPi R2S ROM zip File to Flash"))
+section = romform:section(SimpleSection, "", translate("Choose Your ROM zip File to Flash"))
 fu = section:option(FileUpload, "")
 fu.template = "r2sflasher/rom"
 um = section:option(DummyValue, "", nil)
