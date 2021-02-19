@@ -36,7 +36,7 @@ mv smartdns smartdns1
 mv smartdns1/package/openwrt .
 mv openwrt smartdns
 rm -rf smartdns1
-cp -r ../../../../package/luci-app-smartdns .
+rm -rf luci-app-smartdns/ && svn co https://github.com/openwrt/luci/trunk/applications/luci-app-smartdns
 
 cd ../../
 
