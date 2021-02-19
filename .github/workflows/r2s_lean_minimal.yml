@@ -1,4 +1,4 @@
-name: r2s Lean版openwrt minimal 
+name: r2s Lean版openwrt
 
 on:
   push:
@@ -100,8 +100,13 @@ jobs:
         id: assemble_artifact
         run: |
           . x_assemble_artifact.sh
-          release_tag="R2S-Minimal-$(date +%Y-%m-%d)"
+          release_tag="R2S-$(date +%Y-%m-%d)"
           echo "##[set-output name=release_tag;]$release_tag"
+      - name: Upload Artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: ${{ steps.assemble_artifact.outputs.release_tag }}-ROM
+          path: ./artifact.zip
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
