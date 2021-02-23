@@ -27,6 +27,7 @@ rm -rf openwrt-chinadns-ng/ && git clone https://github.com/pexcn/openwrt-chinad
 #rm -rf v2ray/ && svn co https://github.com/xiaorouji/openwrt-passwall/trunk/v2ray
 rm -rf v2ray-plugin/ && svn co https://github.com/xiaorouji/openwrt-passwall/trunk/v2ray-plugin
 rm -rf xray/ && svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-core
+rm -rf xray-plugin/ && svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-plugin
 rm -rf trojan/ && svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/trojan
 
 ##smartdns r2sflasher
