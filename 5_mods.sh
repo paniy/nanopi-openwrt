@@ -5,4 +5,4 @@ sed -i 's/option fullcone\t1/option fullcone\t0/' package/network/config/firewal
 sed -i '/find.*wlan.*wc/a\WIFI_NUM=0' package/base-files/files/root/setup.sh
 sed -i '/8.8.8.8/d' package/base-files/files/root/setup.sh
 echo 'wireguard' > package/base-files/files/etc/modules.d/10_wireguard
-echo -e '\n Paniy Build\n' >> package/base-files/files/etc/banner
+echo -e "\n Paniy Build on "$(date +%Y.%m.%d)"\n -----------------------------------------------------\n" >> package/base-files/files/etc/banner
