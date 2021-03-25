@@ -1,8 +1,8 @@
 cd friendlywrt-rk3328
 cd kernel/
 git apply ../../add_fullconenat.diff
-wget https://raw.githubusercontent.com/paniy/R2S-R4S-X86-OpenWrt/master/PATCH/new/main/999-unlock-1608mhz-rk3328.patch
-git apply 999-unlock-1608mhz-rk3328.patch
+wget https://raw.githubusercontent.com/immortalwrt/immortalwrt/master/target/linux/rockchip/patches-5.4/991-arm64-dts-rockchip-add-more-cpu-operating-points-for.patch
+git apply 991-arm64-dts-rockchip-add-more-cpu-operating-points-for.patch
 cd ../
 git clone https://github.com/openwrt/openwrt && cd openwrt/
 git checkout a47279154e08d54df05fa8bf45fe935ebf0df5da
